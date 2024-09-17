@@ -1,10 +1,17 @@
-word = "great"
+
+
+possible_words = ["great", "swift", "slime", "break", "quake", "curse"] 
+
+
+# variable to store word user guessses 
+word = random.choice(possible_words) 
 
 #colors for printing 
 default = '\033[0m' 
 green = '\033[92m" 
 yellow = '\033[33m' 
 
+# function to generate hint with correct letter colors 
 def generate_hint(guess): 
     color = default 
     hint = ""
